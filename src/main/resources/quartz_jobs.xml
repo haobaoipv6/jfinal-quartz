@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<quartz>
+	<job name="">
+		<job-detail name="KeywordCacheJob" group="KeywordCacheJob" job-class="wg.media.preprocessing.job.KeywordCacheJob" />
+		<trigger name="KeywordCacheTrigger" group="KeywordCacheTrigger" cron-expression="0/60 * * * * ?" />
+	</job>
+	<job name="">
+		<job-detail name="CountryStatisticsJob" group="CountryStatisticsJob" job-class="wg.media.preprocessing.job.CountryStatisticsJob" />
+		<trigger name="CountryStatisticsTrigger" group="CountryStatisticsTrigger" cron-expression="0/60 * * * * ?" />
+	</job>
+</quartz>
